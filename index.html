@@ -1,0 +1,1976 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imprenta Gipe | Impresión Comercial de Alta Precisión & Acabados Premium</title>
+  <meta name="description" content="Imprenta Gipe: Taller de artes gráficas líder en acabados de lujo: Barniz UV 3D, Hot Stamping oro/plata, troquelados y sustratos especiales. Cotización inmediata en línea.">
+  <meta name="keywords" content="imprenta, acabados premium, barniz uv 3d, hot stamping, pan de oro, tarjetas de presentacion luxury, impresion offset, cmyk, empaques, etiquetas">
+  
+  <!-- Open Graph / Meta Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Imprenta Gipe | Acabados Premium & Impresión de Alta Precisión">
+  <meta property="og:description" content="Impresión comercial de lujo, barniz UV 3D, hot stamping y cotizador dinámico en tiempo real.">
+  
+  <!-- Google Fonts: Space Grotesk, Syne, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome 6 Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cmyk: {
+              cyan: '#00E5FF',
+              magenta: '#FF007F',
+              yellow: '#FFD700',
+              key: '#111116'
+            },
+            gold: {
+              300: '#FBF5B7',
+              400: '#D4AF37',
+              500: '#B38728',
+              600: '#8C6718'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PrintShop",
+    "name": "Imprenta Gipe",
+    "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80",
+    "description": "Imprenta profesional especializada en acabados de lujo: Barniz UV 3D, Hot Stamping pan de oro, troquelados y empaques.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. de las Artes Gráficas 1240, Parque Industrial Gráfico",
+      "addressLocality": "Ciudad de México",
+      "postalCode": "03100",
+      "addressCountry": "MX"
+    },
+    "telephone": "+52-55-5432-8900",
+    "openingHours": "Mo-Fr 08:30-18:30, Sa 09:00-14:00",
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+<body class="bg-[#07080A] text-gray-100 antialiased selection:bg-pink-600 selection:text-white">
+
+  <!-- Interactive CMYK Background Canvas -->
+  <canvas id="cmyk-canvas"></canvas>
+
+  <div class="site-wrapper">
+
+    <!-- =========================================================================
+         1. TOP ANNOUNCEMENT BAR & MAIN HEADER
+         ========================================================================= -->
+    <div class="bg-black/80 border-b border-white/5 py-1.5 px-4 text-xs font-medium text-gray-400">
+      <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex items-center gap-1.5 text-emerald-400">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            Taller en Operación Continua
+          </span>
+          <span class="hidden sm:inline text-gray-600">|</span>
+          <span class="hidden sm:inline">Despachos express a toda la República con empaque antihumedad</span>
+        </div>
+        <div class="flex items-center gap-4 text-gray-300">
+          <a href="tel:+525554328900" class="hover:text-cyan-400 transition-colors flex items-center gap-1">
+            <i class="fa-solid fa-phone text-[11px] text-cyan-400"></i> (55) 5432-8900
+          </a>
+          <span class="text-gray-600">|</span>
+          <a href="mailto:cotizaciones@imprentagipe.com" class="hover:text-amber-300 transition-colors hidden md:flex items-center gap-1">
+            <i class="fa-solid fa-envelope text-[11px] text-amber-300"></i> cotizaciones@imprentagipe.com
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header id="main-header" class="sticky top-0 z-50 transition-all duration-300 bg-black/60 backdrop-blur-xl border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        
+        <!-- Brand Logo with CMYK Grid -->
+        <a href="#" class="group flex flex-col justify-center select-none">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl sm:text-3xl font-extrabold tracking-tight font-brand text-white group-hover:text-amber-300 transition-colors">
+              IMPRENTA <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-100">GIPE</span>
+            </span>
+          </div>
+          <!-- CMYK Squares signature beneath name -->
+          <div class="flex items-center gap-1.5 mt-0.5">
+            <div class="w-3.5 h-1.5 rounded-sm bg-[#00E5FF] shadow-[0_0_8px_rgba(0,229,255,0.8)]" title="Cyan"></div>
+            <div class="w-3.5 h-1.5 rounded-sm bg-[#FF007F] shadow-[0_0_8px_rgba(255,0,127,0.8)]" title="Magenta"></div>
+            <div class="w-3.5 h-1.5 rounded-sm bg-[#FFD700] shadow-[0_0_8px_rgba(255,215,0,0.8)]" title="Yellow"></div>
+            <div class="w-3.5 h-1.5 rounded-sm bg-[#111116] border border-white/40 shadow-[0_0_6px_rgba(255,255,255,0.3)]" title="Key / Black"></div>
+            <span class="text-[9px] uppercase tracking-widest text-gray-400 font-bold ml-1.5">FINE PRINTING</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-gray-300">
+          <a href="#servicios" class="hover:text-cyan-400 transition-colors">Servicios Premium</a>
+          <a href="#acabados" class="hover:text-amber-300 transition-colors">Acabados Especiales</a>
+          <a href="#guia-tecnica" class="hover:text-pink-400 transition-colors">Guía Técnica</a>
+          <a href="#portafolio" class="hover:text-white transition-colors">Portafolio</a>
+          <a href="#nosotros" class="hover:text-gray-100 transition-colors">Nosotros</a>
+          <a href="#contacto" class="hover:text-cyan-400 transition-colors">Contacto</a>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="hidden sm:flex items-center gap-4">
+          <a href="#cotizador" class="btn-primary-luxury text-sm">
+            <i class="fa-solid fa-calculator text-xs"></i>
+            <span>Solicitar Cotización</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg bg-white/5 border border-white/10 text-gray-200 hover:text-white" aria-label="Abrir menú">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div id="mobile-menu" class="hidden lg:hidden bg-[#0C0E14] border-b border-white/10 px-6 py-6 space-y-4">
+        <a href="#servicios" class="mobile-nav-link block text-base font-semibold text-gray-200 hover:text-cyan-400">Servicios Premium</a>
+        <a href="#acabados" class="mobile-nav-link block text-base font-semibold text-gray-200 hover:text-amber-300">Acabados Especiales</a>
+        <a href="#guia-tecnica" class="mobile-nav-link block text-base font-semibold text-gray-200 hover:text-pink-400">Guía Técnica de Preprensa</a>
+        <a href="#cotizador" class="mobile-nav-link block text-base font-semibold text-amber-300">Cotizador Dinámico</a>
+        <a href="#portafolio" class="mobile-nav-link block text-base font-semibold text-gray-200 hover:text-white">Portafolio Real</a>
+        <a href="#contacto" class="mobile-nav-link block text-base font-semibold text-gray-200 hover:text-cyan-400">Ubicación y Contacto</a>
+        <div class="pt-4 border-t border-white/10">
+          <a href="#cotizador" class="btn-primary-luxury w-full justify-center">
+            <i class="fa-solid fa-calculator"></i> Cotizar Pedido Ahora
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================================================
+         2. HERO SECTION CON EFECTO 3D & POSICIONAMIENTO LUXURY
+         ========================================================================= -->
+    <section class="relative pt-12 pb-24 md:pt-20 md:pb-32 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Hero Copywriting -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/15 text-xs text-gray-300">
+              <span class="flex h-2 w-2 relative">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+              </span>
+              <span>Calidad Certificada ISO 12647 · Maquinaria Offset & Digital Alemana</span>
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl xl:text-6xl font-extrabold tracking-tight font-display leading-[1.1] text-white">
+              Impresión de Alta Precisión y <br class="hidden sm:inline">
+              <span class="text-gold-foil">Acabados de Lujo</span> que <br class="hidden sm:inline">
+              Elevan tu Marca.
+            </h1>
+
+            <p class="text-lg sm:text-xl text-gray-300 max-w-2xl font-normal leading-relaxed mx-auto lg:mx-0">
+              En <strong class="text-white">Imprenta Gipe</strong> fusionamos ingeniería del color CMYK de máxima fidelidad con acabados táctiles que cautivan al tacto: <span class="text-amber-300 font-semibold">Barniz UV 3D</span>, <span class="text-amber-300 font-semibold">Hot Stamping en pan de oro</span>, troquelados de precisión y sustratos de hasta 600 gramos.
+            </p>
+
+            <!-- Dual CTAs -->
+            <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <a href="#cotizador" class="btn-primary-luxury w-full sm:w-auto text-base">
+                <i class="fa-solid fa-calculator"></i>
+                <span>Configurar y Cotizar Online</span>
+              </a>
+              <a href="#acabados" class="btn-secondary-cmyk w-full sm:w-auto text-base">
+                <i class="fa-solid fa-wand-magic-sparkles text-cyan-400"></i>
+                <span>Ver Muestrario de Acabados</span>
+              </a>
+            </div>
+
+            <!-- Trust Badges Bar -->
+            <div class="pt-6 grid grid-cols-3 gap-4 border-t border-white/10 max-w-lg mx-auto lg:mx-0">
+              <div>
+                <p class="text-2xl font-bold font-display text-white">+15 Años</p>
+                <p class="text-xs text-gray-400">En Artes Gráficas</p>
+              </div>
+              <div>
+                <p class="text-2xl font-bold font-display text-cyan-400">99.8%</p>
+                <p class="text-xs text-gray-400">Fidelidad de Color</p>
+              </div>
+              <div>
+                <p class="text-2xl font-bold font-display text-amber-300">4.9 / 5.0</p>
+                <p class="text-xs text-gray-400">★★★★★ Calificación</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Hero 3D Interactive Card Showcase -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="card-3d-wrapper w-full max-w-md">
+              <div id="hero-tilt-card" class="card-3d-tilt p-7 relative">
+                
+                <div id="card-reflection" class="foil-reflection-overlay"></div>
+
+                <!-- Card Header -->
+                <div class="flex justify-between items-start mb-10">
+                  <div>
+                    <span class="spot-uv-badge">
+                      <i class="fa-solid fa-droplet text-xs"></i> Barniz UV 3D Alto Relieve
+                    </span>
+                    <h3 class="text-2xl font-black font-brand text-white mt-3 tracking-wide">
+                      GIPE <span class="text-gold-foil">LUXURY</span>
+                    </h3>
+                    <p class="text-xs text-gray-400 uppercase tracking-widest font-semibold">Taller de Edición Limitada</p>
+                  </div>
+                  <div class="cmyk-dots-grid">
+                    <span class="cmyk-dot cmyk-cyan"></span>
+                    <span class="cmyk-dot cmyk-magenta"></span>
+                    <span class="cmyk-dot cmyk-yellow"></span>
+                    <span class="cmyk-dot cmyk-black"></span>
+                  </div>
+                </div>
+
+                <!-- Interactive Finishes Preview Mockup Area -->
+                <div class="my-8 py-6 px-5 rounded-xl bg-black/40 border border-amber-500/20 backdrop-blur-md relative overflow-hidden">
+                  <div class="absolute -right-6 -bottom-6 w-28 h-28 bg-gradient-to-br from-amber-400/20 to-transparent rounded-full blur-2xl"></div>
+                  
+                  <div class="flex items-center gap-3 mb-3">
+                    <div class="w-8 h-8 rounded-lg bg-amber-400/20 border border-amber-400/40 flex items-center justify-center text-amber-300">
+                      <i class="fa-solid fa-stamp text-sm"></i>
+                    </div>
+                    <div>
+                      <h4 class="text-sm font-bold text-white">Hot Stamping Oro 24K</h4>
+                      <p class="text-xs text-gray-400">Termoestampado reflectivo de alta definición</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-lg bg-cyan-400/20 border border-cyan-400/40 flex items-center justify-center text-cyan-300">
+                      <i class="fa-solid fa-hand-sparkles text-sm"></i>
+                    </div>
+                    <div>
+                      <h4 class="text-sm font-bold text-white">Laminado Soft Touch</h4>
+                      <p class="text-xs text-gray-400">Tacto terciopelo antirrayas y antireflejos</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Card Footer Specs -->
+                <div class="pt-4 border-t border-white/10 flex justify-between items-center text-xs text-gray-400">
+                  <span>Papel Algodón 450g Puro</span>
+                  <span class="text-amber-300 font-semibold flex items-center gap-1">
+                    <i class="fa-solid fa-gem text-[10px]"></i> Cantos Metalizados
+                  </span>
+                </div>
+
+              </div>
+              <p class="text-center text-xs text-gray-400 mt-3 flex items-center justify-center gap-1.5">
+                <i class="fa-solid fa-arrows-up-down-left-right text-cyan-400 text-[10px]"></i> Mueve el cursor para apreciar el reflejo de pan de oro y volumen UV
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. CATÁLOGO DE SERVICIOS Y ACABADOS PREMIUM
+         ========================================================================= -->
+    <section id="servicios" class="py-20 relative border-t border-white/10 bg-[#0A0D12]/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-bold uppercase tracking-wider mb-3">
+            <i class="fa-solid fa-layer-group"></i> Catálogo Integral de Producción
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-white">
+            Soluciones de Impresión para Proyectos Exigentes
+          </h2>
+          <p class="text-gray-400 mt-3 text-base">
+            Desde tirajes comerciales de alto volumen hasta piezas boutique con terminados de lujo. Selecciona una categoría para explorar especificaciones y formatos.
+          </p>
+        </div>
+
+        <!-- Category Tabs Navigation -->
+        <div class="catalog-nav-tabs">
+          <button class="catalog-tab-btn active" data-target="cat-comercial">
+            <i class="fa-solid fa-id-card"></i> Impresión Comercial
+          </button>
+          <button class="catalog-tab-btn" data-target="cat-empaques">
+            <i class="fa-solid fa-box-open"></i> Empaques y Etiquetas
+          </button>
+          <button class="catalog-tab-btn" data-target="cat-gran-formato">
+            <i class="fa-solid fa-panorama"></i> Gran Formato
+          </button>
+          <button class="catalog-tab-btn" data-target="cat-editorial">
+            <i class="fa-solid fa-book-open"></i> Editorial y Corporativo
+          </button>
+        </div>
+
+        <!-- PANEL 1: Impresión Comercial -->
+        <div id="cat-comercial" class="catalog-content-panel grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Card 1 -->
+          <div class="service-card">
+            <div class="service-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=700&q=80" alt="Tarjetas de Presentación Luxury">
+              <div class="service-card-overlay"></div>
+              <span class="finish-badge-floating">
+                <i class="fa-solid fa-crown text-[10px]"></i> Luxury Edition
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2 font-display">Tarjetas de Presentación Luxury</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                  Sustratos de 350g a 450g (papel algodón, couché mate, opalina). Aplicación de cantos dorados, barniz UV 3D y laminado soft-touch aterciopelado.
+                </p>
+                <div class="flex flex-wrap gap-1.5 mb-5">
+                  <span class="feature-pill"><i class="fa-solid fa-check text-cyan-400 text-xs"></i> 350g / 450g</span>
+                  <span class="feature-pill"><i class="fa-solid fa-check text-amber-300 text-xs"></i> Pan de Oro</span>
+                  <span class="feature-pill"><i class="fa-solid fa-check text-pink-400 text-xs"></i> Tacto Seda</span>
+                </div>
+              </div>
+              <a href="#cotizador" class="btn-secondary-cmyk w-full text-center text-xs py-2.5">
+                Cotizar este producto
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="service-card">
+            <div class="service-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=700&q=80" alt="Carpetas Corporativas">
+              <div class="service-card-overlay"></div>
+              <span class="finish-badge-floating">
+                <i class="fa-solid fa-briefcase text-[10px]"></i> Identidad Corporativa
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2 font-display">Carpetas & Folders Institucionales</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                  Carpetas con solapa troquelada para documentos carta/oficio, ranura porta-tarjetas y plastificado mate antirrayas para proteger tu propuesta comercial.
+                </p>
+                <div class="flex flex-wrap gap-1.5 mb-5">
+                  <span class="feature-pill"><i class="fa-solid fa-check text-cyan-400 text-xs"></i> Solapa a Medida</span>
+                  <span class="feature-pill"><i class="fa-solid fa-check text-amber-300 text-xs"></i> Sulfatada 14 pts</span>
+                  <span class="feature-pill"><i class="fa-solid fa-check text-emerald-400 text-xs"></i> Barniz a Registro</span>
+                </div>
+              </div>
+              <a href="#cotizador" class="btn-secondary-cmyk w-full text-center text-xs py-2.5">
+                Cotizar este producto
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="service-card">
+            <div class="service-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?auto=format&fit=crop&w=700&q=80" alt="Flyers y Folletos de Alta Gama">
+              <div class="service-card-overlay"></div>
+              <span class="finish-badge-floating">
+                <i class="fa-solid fa-bullhorn text-[10px]"></i> Alta Difusión
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2 font-display">Flyers, Dípticos y Trípticos</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                  Impresión offset con control densitométrico en couché brillante o mate (150g a 300g). Plegados mecánicos de precisión sin fractura de fibra.
+                </p>
+                <div class="flex flex-wrap gap-1.5 mb-5">
+                  <span class="feature-pill"><i class="fa-solid fa-check text-cyan-400 text-xs"></i> Plegado Perfecto</span>
+                  <span class="feature-pill"><i class="fa-solid fa-check text-pink-400 text-xs"></i> Cuatricromía HD</span>
+                  <span class="feature-pill"><i class="fa-solid fa-check text-amber-300 text-xs"></i> Desde 500 pzas</span>
+                </div>
+              </div>
+              <a href="#cotizador" class="btn-secondary-cmyk w-full text-center text-xs py-2.5">
+                Cotizar este producto
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- PANEL 2: Empaques y Etiquetas -->
+        <div id="cat-empaques" class="catalog-content-panel hidden grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <div class="service-card">
+            <div class="service-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1530587191325-3db32d826c18?auto=format&fit=crop&w=700&q=80" alt="Cajas Personalizadas">
+              <div class="service-card-overlay"></div>
+              <span class="finish-badge-floating">
+                <i class="fa-solid fa-box text-[10px]"></i> Packaging Rígido
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2 font-display">Cajas Personalizadas & Empaques</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                  Cajas para retail, joyería, cosmética y botellas. Cartulina sulfatada 16/18 pts o forro impreso sobre cartón rígido con troquelado milimétrico.
+                </p>
+                <div class="flex flex-wrap gap-1.5 mb-5">
+                  <span class="feature-pill">Automontables</span>
+                  <span class="feature-pill">Foil Metálico</span>
+                  <span class="feature-pill">Resistencia Estructural</span>
+                </div>
+              </div>
+              <a href="#cotizador" class="btn-secondary-cmyk w-full text-center text-xs py-2.5">Cotizar este producto</a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&w=700&q=80" alt="Etiquetas en Rollo">
+              <div class="service-card-overlay"></div>
+              <span class="finish-badge-floating">
+                <i class="fa-solid fa-tags text-[10px]"></i> Roll Labels
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2 font-display">Etiquetas en Rollo para Productos</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                  Etiquetas autoadheribles en polipropileno blanco, transparente o metalizado. Resistentes a humedad, congelación y aceites con barniz protector UV.
+                </p>
+                <div class="flex flex-wrap gap-1.5 mb-5">
+                  <span class="feature-pill">BOPP Grado Alimenticio</span>
+                  <span class="feature-pill">Troquel Rotativo</span>
+                  <span class="feature-pill">Adhesivo Permanente</span>
+                </div>
+              </div>
+              <a href="#cotizador" class="btn-secondary-cmyk w-full text-center text-xs py-2.5">Cotizar este producto</a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=700&q=80" alt="Bolsas de Boutique">
+              <div class="service-card-overlay"></div>
+              <span class="finish-badge-floating">
+                <i class="fa-solid fa-bag-shopping text-[10px]"></i> Boutique
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2 font-display">Bolsas de Papel Boutique</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                  Bolsas en papel kraft reciclado o couché plastificado con asas de cordón de algodón o cinta de raso. Refuerzo en base y bocas para alta carga.
+                </p>
+                <div class="flex flex-wrap gap-1.5 mb-5">
+                  <span class="feature-pill">Kraft Eco</span>
+                  <span class="feature-pill">Asa Cordón</span>
+                  <span class="feature-pill">Stamping Frontal</span>
+                </div>
+              </div>
+              <a href="#cotizador" class="btn-secondary-cmyk w-full text-center text-xs py-2.5">Cotizar este producto</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- PANEL 3: Gran Formato -->
+        <div id="cat-gran-formato" class="catalog-content-panel hidden grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <div class="service-card">
+            <div class="service-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1542744095-291d1f67b221?auto=format&fit=crop&w=700&q=80" alt="Lonas y Banners">
+              <div class="service-card-overlay"></div>
+              <span class="finish-badge-floating">
+                <i class="fa-solid fa-maximize text-[10px]"></i> Alta Resistencia
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2 font-display">Lonas Frontlit & Backlit (1440 DPI)</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                  Impresión fotográfica en gran formato con tintas UV y ecosolventes. Sellado térmico perimetral y ojillos niquelados inoxidables cada 50 cm.
+                </p>
+                <div class="flex flex-wrap gap-1.5 mb-5">
+                  <span class="feature-pill">13 oz y 18 oz</span>
+                  <span class="feature-pill">Anti-desgarre</span>
+                  <span class="feature-pill">Resistente a Rayos UV</span>
+                </div>
+              </div>
+              <a href="#cotizador" class="btn-secondary-cmyk w-full text-center text-xs py-2.5">Cotizar este producto</a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=700&q=80" alt="Banners Roll Up">
+              <div class="service-card-overlay"></div>
+              <span class="finish-badge-floating">
+                <i class="fa-solid fa-scroll text-[10px]"></i> Displays
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2 font-display">Banners Roll-Up de Aluminio</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                  Estructuras retráctiles de aluminio reforzado con lona mate anti-curling (no se ondea en los bordes) y estuche rígido acolchado para transporte.
+                </p>
+                <div class="flex flex-wrap gap-1.5 mb-5">
+                  <span class="feature-pill">85x200 / 100x200 cm</span>
+                  <span class="feature-pill">Montaje en 30s</span>
+                  <span class="feature-pill">Lona Zero-Curl</span>
+                </div>
+              </div>
+              <a href="#cotizador" class="btn-secondary-cmyk w-full text-center text-xs py-2.5">Cotizar este producto</a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=700&q=80" alt="Viniles y Rotulación">
+              <div class="service-card-overlay"></div>
+              <span class="finish-badge-floating">
+                <i class="fa-solid fa-spray-can text-[10px]"></i> Rotulación
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2 font-display">Vinil Adhesivo & Rotulación</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                  Vinil brillante, mate, microperforado para cristales y vinil de corte para muro o flotillas vehiculares. Instalación profesional opcional.
+                </p>
+                <div class="flex flex-wrap gap-1.5 mb-5">
+                  <span class="feature-pill">Vinil 3M / Avery</span>
+                  <span class="feature-pill">Laminado Protector</span>
+                  <span class="feature-pill">Corte por Computadora</span>
+                </div>
+              </div>
+              <a href="#cotizador" class="btn-secondary-cmyk w-full text-center text-xs py-2.5">Cotizar este producto</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- PANEL 4: Editorial y Corporativo -->
+        <div id="cat-editorial" class="catalog-content-panel hidden grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <div class="service-card">
+            <div class="service-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=700&q=80" alt="Libros y Catálogos">
+              <div class="service-card-overlay"></div>
+              <span class="finish-badge-floating">
+                <i class="fa-solid fa-book text-[10px]"></i> Alta Encuadernación
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2 font-display">Libros de Arte & Catálogos Luxury</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                  Encuadernación en pasta dura (tapa rígida con cabezadas de tela) o pasta blanda cosida con adhesivo PUR ultra flexible que nunca desprende hojas.
+                </p>
+                <div class="flex flex-wrap gap-1.5 mb-5">
+                  <span class="feature-pill">Lomo Cuadrado</span>
+                  <span class="feature-pill">Adhesivo PUR</span>
+                  <span class="feature-pill">Papeles FSC</span>
+                </div>
+              </div>
+              <a href="#cotizador" class="btn-secondary-cmyk w-full text-center text-xs py-2.5">Cotizar este producto</a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?auto=format&fit=crop&w=700&q=80" alt="Revistas Periódicas">
+              <div class="service-card-overlay"></div>
+              <span class="finish-badge-floating">
+                <i class="fa-solid fa-newspaper text-[10px]"></i> Publicaciones
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2 font-display">Revistas Grapadas & Grapa Omega</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                  Para tirajes mensuales o trimestrales. Portadas en couché 250g con barniz UV brillante e interiores en couché ligero para óptima relación peso/costo.
+                </p>
+                <div class="flex flex-wrap gap-1.5 mb-5">
+                  <span class="feature-pill">Doble Grapa de Acero</span>
+                  <span class="feature-pill">Tirajes desde 250</span>
+                  <span class="feature-pill">Entrega Rápida</span>
+                </div>
+              </div>
+              <a href="#cotizador" class="btn-secondary-cmyk w-full text-center text-xs py-2.5">Cotizar este producto</a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=700&q=80" alt="Cuadernos Corporativos">
+              <div class="service-card-overlay"></div>
+              <span class="finish-badge-floating">
+                <i class="fa-solid fa-pencil text-[10px]"></i> Merchandising
+              </span>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2 font-display">Cuadernos & Agendas Ejecutivas</h3>
+                <p class="text-gray-400 text-sm mb-4">
+                  Cuadernos de notas corporativos con forro en curpiel italiano grabado en bajorrelieve, listón separador, elástico de cierre y hojas personalizadas.
+                </p>
+                <div class="flex flex-wrap gap-1.5 mb-5">
+                  <span class="feature-pill">Bajorrelieve Ciego</span>
+                  <span class="feature-pill">Papel Ahuesado</span>
+                  <span class="feature-pill">Bolsillo Interior</span>
+                </div>
+              </div>
+              <a href="#cotizador" class="btn-secondary-cmyk w-full text-center text-xs py-2.5">Cotizar este producto</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. MUESTRARIO DE ACABADOS ESPECIALES (SHOWCASE TÁCTIL / VISUAL)
+         ========================================================================= -->
+    <section id="acabados" class="py-20 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-bold uppercase tracking-wider mb-3">
+            <i class="fa-solid fa-sparkles"></i> El Valor Diferencial de Gipe
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-extrabold font-display text-white">
+            Muestrario de Acabados Especiales
+          </h2>
+          <p class="text-gray-400 mt-4 text-base sm:text-lg">
+            La textura es el primer contacto que el cliente tiene con tu marca. Domina la combinación de brillos, metales y relieves para crear piezas memorables.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Acabado 1: Barniz UV 3D -->
+          <div class="finish-sample-card group">
+            <div class="flex justify-between items-start mb-4">
+              <span class="p-3 rounded-xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xl">
+                <i class="fa-solid fa-droplet"></i>
+              </span>
+              <span class="text-xs font-bold uppercase tracking-wider text-cyan-400 bg-cyan-400/10 px-2.5 py-1 rounded-full">
+                Relieve Táctil
+              </span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2 font-display">Barniz UV 3D Alto Relieve</h3>
+            <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+              Polímero líquido ultra transparente aplicado con registro digital exacto. Se cura con luz ultravioleta, generando una cúpula volumétrica de brillo vidriado que resalta logotipos, patrones y tipografías sobre fondos mate.
+            </p>
+            <div class="border-t border-white/10 pt-3 text-xs text-gray-400 flex justify-between items-center">
+              <span>Espesor: Hasta 100 micras</span>
+              <span class="text-amber-300 font-semibold">Tacto Escultural</span>
+            </div>
+          </div>
+
+          <!-- Acabado 2: Hot Stamping Oro & Plata -->
+          <div class="finish-sample-card group">
+            <div class="flex justify-between items-start mb-4">
+              <span class="p-3 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xl">
+                <i class="fa-solid fa-gem"></i>
+              </span>
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-300 bg-amber-400/10 px-2.5 py-1 rounded-full">
+                Metalizado Espejo
+              </span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2 font-display">Hot Stamping (Foil Oro / Plata)</h3>
+            <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+              Termotransferencia térmica con grabado en magnesio y foil de alta densidad. Logra un brillo metálico puro reflectivo que ninguna tinta metalizada convencional puede igualar. Opciones en oro brillante, mate, plata, cobre y holográfico.
+            </p>
+            <div class="border-t border-white/10 pt-3 text-xs text-gray-400 flex justify-between items-center">
+              <span>Fijación: Calor y Presión</span>
+              <span class="text-amber-300 font-semibold">Reflejo Espejo</span>
+            </div>
+          </div>
+
+          <!-- Acabado 3: Troquelado de Precisión -->
+          <div class="finish-sample-card group">
+            <div class="flex justify-between items-start mb-4">
+              <span class="p-3 rounded-xl bg-pink-500/10 border border-pink-500/30 text-pink-400 text-xl">
+                <i class="fa-solid fa-shapes"></i>
+              </span>
+              <span class="text-xs font-bold uppercase tracking-wider text-pink-400 bg-pink-400/10 px-2.5 py-1 rounded-full">
+                Geometría Libre
+              </span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2 font-display">Troquelado & Suaje a Medida</h3>
+            <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+              Corte mecánico mediante plecas de acero templado o corte láser de ultra detalle. Permite ventanas transparentes, esquinas redondeadas personalizadas, siluetas orgánicas y ensambles automontables sin pegamento.
+            </p>
+            <div class="border-t border-white/10 pt-3 text-xs text-gray-400 flex justify-between items-center">
+              <span>Precisión: ±0.2 mm</span>
+              <span class="text-amber-300 font-semibold">Cortes Complejos</span>
+            </div>
+          </div>
+
+          <!-- Acabado 4: Gofrado / Embossing -->
+          <div class="finish-sample-card group">
+            <div class="flex justify-between items-start mb-4">
+              <span class="p-3 rounded-xl bg-purple-500/10 border border-purple-500/30 text-purple-400 text-xl">
+                <i class="fa-solid fa-cube"></i>
+              </span>
+              <span class="text-xs font-bold uppercase tracking-wider text-purple-400 bg-purple-400/10 px-2.5 py-1 rounded-full">
+                Fibra Esculpida
+              </span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2 font-display">Gofrado & Embossing (Relieve Ciego)</h3>
+            <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+              Deformación controlada de la fibra del papel mediante matriz macho-hembra de bronce. Modela el papel hacia arriba (emboss) o hacia abajo (deboss) sin necesidad de tintas, aportando sobriedad y elegancia atemporal.
+            </p>
+            <div class="border-t border-white/10 pt-3 text-xs text-gray-400 flex justify-between items-center">
+              <span>Matrices: Bronce / Resina</span>
+              <span class="text-amber-300 font-semibold">Sutil & Noble</span>
+            </div>
+          </div>
+
+          <!-- Acabado 5: Laminado Soft Touch -->
+          <div class="finish-sample-card group">
+            <div class="flex justify-between items-start mb-4">
+              <span class="p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xl">
+                <i class="fa-solid fa-feather"></i>
+              </span>
+              <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 bg-emerald-400/10 px-2.5 py-1 rounded-full">
+                Tacto Melocotón
+              </span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2 font-display">Laminado Soft Touch (Tacto Seda)</h3>
+            <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+              Película de polipropileno térmico con tratamiento superficial aterciopelado. Elimina el 100% de los reflejos de luz y otorga una sensación táctil similar a la piel de durazno, con alta resistencia a rayaduras y grasas dactilares.
+            </p>
+            <div class="border-t border-white/10 pt-3 text-xs text-gray-400 flex justify-between items-center">
+              <span>Terminación: Extra Mate</span>
+              <span class="text-amber-300 font-semibold">Anti-huella</span>
+            </div>
+          </div>
+
+          <!-- Acabado 6: Cantos Pintados / Edge Painting -->
+          <div class="finish-sample-card group">
+            <div class="flex justify-between items-start mb-4">
+              <span class="p-3 rounded-xl bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 text-xl">
+                <i class="fa-solid fa-palette"></i>
+              </span>
+              <span class="text-xs font-bold uppercase tracking-wider text-yellow-400 bg-yellow-400/10 px-2.5 py-1 rounded-full">
+                Detalle Perimetral
+              </span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2 font-display">Cantos Pintados & Foliados</h3>
+            <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+              Tratamiento manual en el borde del papel en bloques prensados. Aplicación de tinta directa Pantone (cantos flúor o corporativos) o pan de oro metalizado en el perímetro para papeles gruesos de más de 400g.
+            </p>
+            <div class="border-t border-white/10 pt-3 text-xs text-gray-400 flex justify-between items-center">
+              <span>Ideal para: Tarjetas > 400g</span>
+              <span class="text-amber-300 font-semibold">Exclusividad Total</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. GUÍA DE ENVÍO DE ARCHIVOS (ESPECIFICACIONES TÉCNICAS DE PREPRENSA)
+         ========================================================================= -->
+    <section id="guia-tecnica" class="py-20 relative bg-[#090C12] border-y border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-400 text-xs font-bold uppercase tracking-wider mb-3">
+            <i class="fa-solid fa-file-shield"></i> Preprensa & Control de Calidad
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-white">
+            Guía de Envío de Archivos: Tu Impresión Sin Errores
+          </h2>
+          <p class="text-gray-400 mt-3 text-base">
+            Sigue estos lineamientos para garantizar que el color en pantalla sea idéntico al impreso y evitar retrasos en el taller de producción.
+          </p>
+        </div>
+
+        <!-- Technical Tabs Navigation -->
+        <div class="flex justify-center border-b border-white/10 mb-10 overflow-x-auto">
+          <div class="flex space-x-8">
+            <button class="guide-tab-btn pb-4 font-semibold text-sm border-b-2 border-cyan-400 text-white flex items-center gap-2 active" data-guide="guide-specs">
+              <i class="fa-solid fa-sliders text-cyan-400"></i> Requisitos Esenciales
+            </button>
+            <button class="guide-tab-btn pb-4 font-semibold text-sm border-b-2 border-transparent text-gray-400 hover:text-white flex items-center gap-2" data-guide="guide-bleed">
+              <i class="fa-solid fa-crop-simple text-amber-300"></i> Sangrado & Márgenes
+            </button>
+            <button class="guide-tab-btn pb-4 font-semibold text-sm border-b-2 border-transparent text-gray-400 hover:text-white flex items-center gap-2" data-guide="guide-color">
+              <i class="fa-solid fa-palette text-pink-400"></i> CMYK vs RGB & Negro Enriquecido
+            </button>
+            <button class="guide-tab-btn pb-4 font-semibold text-sm border-b-2 border-transparent text-gray-400 hover:text-white flex items-center gap-2" data-guide="guide-templates">
+              <i class="fa-solid fa-download text-emerald-400"></i> Descargar Plantillas
+            </button>
+          </div>
+        </div>
+
+        <!-- PANEL A: Requisitos Esenciales -->
+        <div id="guide-specs" class="guide-panel grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <div class="glass-panel p-6">
+            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-xl mb-4">
+              <i class="fa-solid fa-file-pdf"></i>
+            </div>
+            <h4 class="text-lg font-bold text-white mb-2 font-display">Formatos Oficiales</h4>
+            <p class="text-gray-400 text-sm mb-3">
+              Exporta preferentemente en <strong class="text-white">PDF/X-1a:2001</strong> o <strong class="text-white">PDF/X-4</strong>. También aceptamos Adobe Illustrator (<code class="text-cyan-400">.AI</code>) y Photoshop (<code class="text-cyan-400">.PSD</code>) a 300 DPI.
+            </p>
+            <span class="text-xs text-cyan-400 font-semibold">✓ Con marcas de corte si aplica</span>
+          </div>
+
+          <div class="glass-panel p-6">
+            <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 text-xl mb-4">
+              <i class="fa-solid fa-expand"></i>
+            </div>
+            <h4 class="text-lg font-bold text-white mb-2 font-display">300 DPI de Resolución</h4>
+            <p class="text-gray-400 text-sm mb-3">
+              Todas las imágenes rasterizadas y fotografías deben estar a <strong class="text-white">300 DPI en escala 1:1</strong>. Para lonas o gran formato, la resolución mínima aceptable es 150 DPI a tamaño real.
+            </p>
+            <span class="text-xs text-pink-400 font-semibold">✕ No usar imágenes de WhatsApp o web</span>
+          </div>
+
+          <div class="glass-panel p-6">
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-300 text-xl mb-4">
+              <i class="fa-solid fa-bezier-curve"></i>
+            </div>
+            <h4 class="text-lg font-bold text-white mb-2 font-display">Fuentes a Curvas</h4>
+            <p class="text-gray-400 text-sm mb-3">
+              Convierte todos los textos y tipografías a contornos / curvas (<code class="text-amber-300">Ctrl + Shift + O</code> en Illustrator) para evitar que fuentes faltantes sean sustituidas en la filmadora de placas.
+            </p>
+            <span class="text-xs text-amber-300 font-semibold">✓ Tipografía 100% vectorizada</span>
+          </div>
+
+          <div class="glass-panel p-6">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-xl mb-4">
+              <i class="fa-solid fa-droplet-slash"></i>
+            </div>
+            <h4 class="text-lg font-bold text-white mb-2 font-display">Capas de Acabados</h4>
+            <p class="text-gray-400 text-sm mb-3">
+              Para Barniz UV o Hot Stamping, crea una capa separada llamada <code class="text-emerald-400">BARNIZ</code> o <code class="text-emerald-400">FOIL</code> con vector en tinta directa o negro al 100% que indique el área exacta del terminado.
+            </p>
+            <span class="text-xs text-emerald-400 font-semibold">✓ Registro milimétrico</span>
+          </div>
+
+        </div>
+
+        <!-- PANEL B: Sangrado & Márgenes (Visual Diagram) -->
+        <div id="guide-bleed" class="guide-panel hidden grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-6">
+            <div class="bleed-visual-box">
+              <!-- Outer bleed 3mm (Red) -->
+              <div class="bleed-line-outer"></div>
+              <!-- Cut line (Blue) -->
+              <div class="cut-line-middle"></div>
+              <!-- Safe line inner (Green) -->
+              <div class="safe-line-inner">
+                <div class="h-full flex flex-col items-center justify-center text-center p-4">
+                  <i class="fa-solid fa-shield-halved text-emerald-400 text-2xl mb-1"></i>
+                  <span class="text-xs font-bold text-white">Área Segura (Diseño & Texto)</span>
+                  <span class="text-[10px] text-gray-400">Mantén logos y textos dentro de esta zona</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 space-y-4">
+            <h3 class="text-2xl font-bold font-display text-white">Anatomía de un Archivo de Impresión Correcto</h3>
+            <p class="text-gray-300 text-sm leading-relaxed">
+              Durante el guillotinado mecánico a alta velocidad, existe una tolerancia física de hasta 1 mm. Si no respetas el sangrado y el margen de seguridad, tu diseño corre riesgo de ser recortado o mostrar bordes blancos.
+            </p>
+
+            <div class="guide-badge-legend space-y-3 pt-2">
+              <div class="legend-item">
+                <span class="legend-indicator border-2 border-dashed border-red-500 bg-red-500/20"></span>
+                <div>
+                  <strong class="text-white block">Línea de Sangría (Bleed) - 3 mm Perimetral</strong>
+                  <span class="text-xs text-gray-400">Extiende los fondos de color e imágenes hasta esta línea exterior para evitar rebordes blancos al cortar.</span>
+                </div>
+              </div>
+
+              <div class="legend-item">
+                <span class="legend-indicator border-2 border-sky-400 bg-sky-400/20"></span>
+                <div>
+                  <strong class="text-white block">Línea de Corte (Trim Size)</strong>
+                  <span class="text-xs text-gray-400">El tamaño final real de la pieza terminada (ej. 9.0 x 5.0 cm para tarjetas).</span>
+                </div>
+              </div>
+
+              <div class="legend-item">
+                <span class="legend-indicator border-2 border-dotted border-emerald-500 bg-emerald-500/20"></span>
+                <div>
+                  <strong class="text-white block">Margen de Seguridad Interior - 4 mm hacia adentro</strong>
+                  <span class="text-xs text-gray-400">Ningún texto, teléfono o logotipo debe estar a menos de 4 mm del borde de corte.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- PANEL C: CMYK vs RGB & Negro Enriquecido -->
+        <div id="guide-color" class="guide-panel hidden grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          
+          <div class="glass-panel p-6 space-y-4">
+            <div class="flex items-center gap-3">
+              <span class="p-2.5 rounded-lg bg-pink-500/20 text-pink-400 font-bold text-sm">CMYK</span>
+              <h4 class="text-xl font-bold text-white font-display">Espacio de Color Cuatricromía</h4>
+            </div>
+            <p class="text-gray-300 text-sm leading-relaxed">
+              Las pantallas emiten luz en modelo aditivo <strong class="text-white">RGB</strong> (Rojo, Verde, Azul). Las imprentas reflejan luz mediante tintas sustractivas <strong class="text-cyan-400">CMYK</strong> (Cian, Magenta, Amarillo y Negro).
+            </p>
+            <div class="p-4 rounded-xl bg-black/50 border border-white/10 text-xs text-gray-300 space-y-2">
+              <p><strong class="text-amber-300">⚠️ Advertencia:</strong> Los colores RGB ultra saturados (como verdes neón o azules eléctricos de pantalla) se apagan al convertirse a CMYK.</p>
+              <p>Recomendación: Configura tu documento en modo <strong class="text-white">CMYK (Perfil Coated FOGRA39 o GRACoL2006)</strong> desde el primer trazo en Illustrator o InDesign.</p>
+            </div>
+          </div>
+
+          <div class="glass-panel p-6 space-y-4">
+            <h4 class="text-xl font-bold text-white font-display flex items-center gap-2">
+              <i class="fa-solid fa-circle text-gray-400"></i> La Fórmula del Negro Enriquecido (Rich Black)
+            </h4>
+            <p class="text-gray-300 text-sm leading-relaxed">
+              En imprenta existen dos tipos de negro. Usar el incorrecto puede resultar en textos borrosos o fondos grisáceos:
+            </p>
+            
+            <div class="grid grid-cols-2 gap-4 pt-2">
+              <div class="rich-black-box">
+                <span class="text-xs text-cyan-400 font-bold block mb-1">Para Textos & Líneas Finas</span>
+                <p class="text-white font-bold text-sm">Negro Puro 100K</p>
+                <div class="text-[11px] text-gray-400 mt-2 space-y-0.5">
+                  <div>C: 0%</div>
+                  <div>M: 0%</div>
+                  <div>Y: 0%</div>
+                  <div class="text-white font-bold">K: 100%</div>
+                </div>
+                <span class="text-[10px] text-emerald-400 block mt-2">Evita descalces de registro</span>
+              </div>
+
+              <div class="rich-black-box">
+                <span class="text-xs text-amber-300 font-bold block mb-1">Para Fondos Negros Intensos</span>
+                <p class="text-white font-bold text-sm">Rich Black Gipe</p>
+                <div class="text-[11px] text-gray-400 mt-2 space-y-0.5">
+                  <div>C: 40%</div>
+                  <div>M: 30%</div>
+                  <div>Y: 20%</div>
+                  <div class="text-white font-bold">K: 100%</div>
+                </div>
+                <span class="text-[10px] text-amber-300 block mt-2">Negro profundo azabache</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- PANEL D: Descargar Plantillas -->
+        <div id="guide-templates" class="guide-panel hidden">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <div class="glass-panel p-6 text-center flex flex-col justify-between">
+              <div>
+                <i class="fa-solid fa-address-card text-3xl text-cyan-400 mb-3"></i>
+                <h4 class="text-lg font-bold text-white mb-1">Tarjetas de Presentación</h4>
+                <p class="text-xs text-gray-400 mb-4">Medida 9.0 x 5.0 cm + 3mm sangría (PDF / AI)</p>
+              </div>
+              <button class="btn-download-template btn-secondary-cmyk w-full text-xs py-2" data-template="Tarjetas de Presentación" data-format="PDF/AI">
+                <i class="fa-solid fa-download"></i> Descargar Plantilla
+              </button>
+            </div>
+
+            <div class="glass-panel p-6 text-center flex flex-col justify-between">
+              <div>
+                <i class="fa-solid fa-folder-closed text-3xl text-amber-300 mb-3"></i>
+                <h4 class="text-lg font-bold text-white mb-1">Folder con Solapa Carta</h4>
+                <p class="text-xs text-gray-400 mb-4">Con suaje de solapa y portatarjeta (PDF / AI)</p>
+              </div>
+              <button class="btn-download-template btn-secondary-cmyk w-full text-xs py-2" data-template="Folder con Solapa" data-format="PDF/AI">
+                <i class="fa-solid fa-download"></i> Descargar Plantilla
+              </button>
+            </div>
+
+            <div class="glass-panel p-6 text-center flex flex-col justify-between">
+              <div>
+                <i class="fa-solid fa-newspaper text-3xl text-pink-400 mb-3"></i>
+                <h4 class="text-lg font-bold text-white mb-1">Tríptico Tamaño Carta</h4>
+                <p class="text-xs text-gray-400 mb-4">Marcas de doblez envolvente (PDF / AI)</p>
+              </div>
+              <button class="btn-download-template btn-secondary-cmyk w-full text-xs py-2" data-template="Tríptico Carta" data-format="PDF/AI">
+                <i class="fa-solid fa-download"></i> Descargar Plantilla
+              </button>
+            </div>
+
+            <div class="glass-panel p-6 text-center flex flex-col justify-between">
+              <div>
+                <i class="fa-solid fa-box text-3xl text-emerald-400 mb-3"></i>
+                <h4 class="text-lg font-bold text-white mb-1">Caja Automontable Estándar</h4>
+                <p class="text-xs text-gray-400 mb-4">Líneas de hendido y corte troquel (PDF / AI)</p>
+              </div>
+              <button class="btn-download-template btn-secondary-cmyk w-full text-xs py-2" data-template="Caja Automontable" data-format="PDF/AI">
+                <i class="fa-solid fa-download"></i> Descargar Plantilla
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. MÓDULO DE COTIZACIÓN DINÁMICO (CALCULADORA INTERACTIVA DE ALTA PRECISIÓN)
+         ========================================================================= -->
+    <section id="cotizador" class="py-20 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-bold uppercase tracking-wider mb-3">
+            <i class="fa-solid fa-calculator"></i> Motor de Presupuesto Instantáneo
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-extrabold font-display text-white">
+            Cotizador Inteligente en Tiempo Real
+          </h2>
+          <p class="text-gray-400 mt-4 text-base sm:text-lg">
+            Configura tu proyecto seleccionando sustrato, tintas y acabados especiales. Obtén tu cotización formal con descuento por volumen y envíala directamente a WhatsApp en 1 clic.
+          </p>
+        </div>
+
+        <!-- Calculator Grid Layout: Form (Left) + Sticky Summary (Right) -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- FORM STEPS (8 Cols) -->
+          <div class="lg:col-span-8 space-y-8">
+            <form id="quote-form" class="calculator-card p-6 sm:p-8 space-y-8">
+              
+              <!-- STEP 1: Producto -->
+              <div>
+                <div class="calc-section-title">
+                  <span class="calc-step-badge">1</span>
+                  <span>Selecciona el Producto</span>
+                </div>
+                <div class="selector-grid">
+                  
+                  <label class="selector-option">
+                    <input type="radio" name="product" value="tarjetas_luxury" checked>
+                    <div class="option-box">
+                      <i class="fa-solid fa-id-card"></i>
+                      <span class="option-label">Tarjetas Luxury</span>
+                      <span class="option-sub">Boutique</span>
+                    </div>
+                  </label>
+
+                  <label class="selector-option">
+                    <input type="radio" name="product" value="carpetas_corp">
+                    <div class="option-box">
+                      <i class="fa-solid fa-folder-open"></i>
+                      <span class="option-label">Carpetas Corp.</span>
+                      <span class="option-sub">Con solapa</span>
+                    </div>
+                  </label>
+
+                  <label class="selector-option">
+                    <input type="radio" name="product" value="cajas_empaque">
+                    <div class="option-box">
+                      <i class="fa-solid fa-box"></i>
+                      <span class="option-label">Cajas y Empaque</span>
+                      <span class="option-sub">Packaging</span>
+                    </div>
+                  </label>
+
+                  <label class="selector-option">
+                    <input type="radio" name="product" value="etiquetas_rollo">
+                    <div class="option-box">
+                      <i class="fa-solid fa-tags"></i>
+                      <span class="option-label">Etiquetas Rollo</span>
+                      <span class="option-sub">BOPP / Kraft</span>
+                    </div>
+                  </label>
+
+                  <label class="selector-option">
+                    <input type="radio" name="product" value="catalogos_revistas">
+                    <div class="option-box">
+                      <i class="fa-solid fa-book-open"></i>
+                      <span class="option-label">Catálogos/Libros</span>
+                      <span class="option-sub">Lomo / Grapa</span>
+                    </div>
+                  </label>
+
+                  <label class="selector-option">
+                    <input type="radio" name="product" value="gran_formato">
+                    <div class="option-box">
+                      <i class="fa-solid fa-panorama"></i>
+                      <span class="option-label">Gran Formato</span>
+                      <span class="option-sub">Lonas/Vinil</span>
+                    </div>
+                  </label>
+
+                </div>
+              </div>
+
+              <!-- STEP 2: Sustrato / Material y Gramaje -->
+              <div class="pt-6 border-t border-white/10">
+                <div class="calc-section-title">
+                  <span class="calc-step-badge">2</span>
+                  <span>Papel / Material y Gramaje</span>
+                </div>
+                <div class="selector-grid">
+                  
+                  <label class="selector-option">
+                    <input type="radio" name="material" value="couche_350" checked>
+                    <div class="option-box">
+                      <i class="fa-solid fa-sheet-plastic"></i>
+                      <span class="option-label">Couché Mate 350g</span>
+                      <span class="option-sub">Estándar Pro</span>
+                    </div>
+                  </label>
+
+                  <label class="selector-option">
+                    <input type="radio" name="material" value="couche_300">
+                    <div class="option-box">
+                      <i class="fa-solid fa-sun"></i>
+                      <span class="option-label">Couché Brillo 300g</span>
+                      <span class="option-sub">Brillo natural</span>
+                    </div>
+                  </label>
+
+                  <label class="selector-option">
+                    <input type="radio" name="material" value="sulfatada_14">
+                    <div class="option-box">
+                      <i class="fa-solid fa-layer-group"></i>
+                      <span class="option-label">Sulfatada 14 pts</span>
+                      <span class="option-sub">Máxima rigidez</span>
+                    </div>
+                  </label>
+
+                  <label class="selector-option">
+                    <input type="radio" name="material" value="algodon_450">
+                    <div class="option-box">
+                      <i class="fa-solid fa-crown text-amber-300"></i>
+                      <span class="option-label">Algodón 450g</span>
+                      <span class="option-sub">Edición Luxury</span>
+                    </div>
+                  </label>
+
+                  <label class="selector-option">
+                    <input type="radio" name="material" value="kraft_300">
+                    <div class="option-box">
+                      <i class="fa-solid fa-seedling text-emerald-400"></i>
+                      <span class="option-label">Kraft Eco 300g</span>
+                      <span class="option-sub">Reciclado</span>
+                    </div>
+                  </label>
+
+                  <label class="selector-option">
+                    <input type="radio" name="material" value="opalina_250">
+                    <div class="option-box">
+                      <i class="fa-solid fa-feather"></i>
+                      <span class="option-label">Opalina 250g</span>
+                      <span class="option-sub">Holandesa</span>
+                    </div>
+                  </label>
+
+                </div>
+              </div>
+
+              <!-- STEP 3: Tintas de Impresión -->
+              <div class="pt-6 border-t border-white/10">
+                <div class="calc-section-title">
+                  <span class="calc-step-badge">3</span>
+                  <span>Modo de Tintas / Caras</span>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                  
+                  <label class="selector-option">
+                    <input type="radio" name="inks" value="4x4" checked>
+                    <div class="option-box">
+                      <i class="fa-solid fa-retweet text-cyan-400"></i>
+                      <span class="option-label">4x4 Color</span>
+                      <span class="option-sub">Ambos Lados</span>
+                    </div>
+                  </label>
+
+                  <label class="selector-option">
+                    <input type="radio" name="inks" value="4x0">
+                    <div class="option-box">
+                      <i class="fa-solid fa-image text-pink-400"></i>
+                      <span class="option-label">4x0 Color</span>
+                      <span class="option-sub">Sólo Frente</span>
+                    </div>
+                  </label>
+
+                  <label class="selector-option">
+                    <input type="radio" name="inks" value="4x1">
+                    <div class="option-box">
+                      <i class="fa-solid fa-circle-half-stroke text-amber-300"></i>
+                      <span class="option-label">4x1 Frente/Vuelta</span>
+                      <span class="option-sub">Color + 1 Tinta</span>
+                    </div>
+                  </label>
+
+                  <label class="selector-option">
+                    <input type="radio" name="inks" value="1x0">
+                    <div class="option-box">
+                      <i class="fa-solid fa-moon text-gray-400"></i>
+                      <span class="option-label">1x0 Monocromático</span>
+                      <span class="option-sub">1 Tinta Directa</span>
+                    </div>
+                  </label>
+
+                </div>
+              </div>
+
+              <!-- STEP 4: Acabados Especiales (Multi-selección) -->
+              <div class="pt-6 border-t border-white/10">
+                <div class="calc-section-title">
+                  <span class="calc-step-badge">4</span>
+                  <span>Acabados Especiales Premium (Opcional - Combinables)</span>
+                </div>
+                <div class="selector-grid">
+                  
+                  <label class="selector-option finish-option">
+                    <input type="checkbox" name="finishes" value="lam_softtouch" checked>
+                    <div class="option-box">
+                      <i class="fa-solid fa-feather text-amber-300"></i>
+                      <span class="option-label">Laminado Soft Touch</span>
+                      <span class="badge-luxury-tag">Tacto Seda</span>
+                    </div>
+                  </label>
+
+                  <label class="selector-option finish-option">
+                    <input type="checkbox" name="finishes" value="barniz_uv_3d" checked>
+                    <div class="option-box">
+                      <i class="fa-solid fa-droplet text-cyan-400"></i>
+                      <span class="option-label">Barniz UV 3D</span>
+                      <span class="badge-luxury-tag">Alto Relieve</span>
+                    </div>
+                  </label>
+
+                  <label class="selector-option finish-option">
+                    <input type="checkbox" name="finishes" value="hot_stamping_oro">
+                    <div class="option-box">
+                      <i class="fa-solid fa-gem text-amber-300"></i>
+                      <span class="option-label">Hot Stamping Oro</span>
+                      <span class="badge-luxury-tag">Foil 24K</span>
+                    </div>
+                  </label>
+
+                  <label class="selector-option finish-option">
+                    <input type="checkbox" name="finishes" value="hot_stamping_plata">
+                    <div class="option-box">
+                      <i class="fa-solid fa-shield text-slate-300"></i>
+                      <span class="option-label">Hot Stamping Plata</span>
+                      <span class="badge-luxury-tag">Metal Plata</span>
+                    </div>
+                  </label>
+
+                  <label class="selector-option finish-option">
+                    <input type="checkbox" name="finishes" value="troquelado">
+                    <div class="option-box">
+                      <i class="fa-solid fa-scissors text-pink-400"></i>
+                      <span class="option-label">Troquelado Especial</span>
+                      <span class="badge-luxury-tag">Corte Libre</span>
+                    </div>
+                  </label>
+
+                  <label class="selector-option finish-option">
+                    <input type="checkbox" name="finishes" value="embossing">
+                    <div class="option-box">
+                      <i class="fa-solid fa-cube text-purple-400"></i>
+                      <span class="option-label">Gofrado / Relieve</span>
+                      <span class="badge-luxury-tag">Relieve Ciego</span>
+                    </div>
+                  </label>
+
+                </div>
+              </div>
+
+              <!-- STEP 5: Cantidad & Tiraje -->
+              <div class="pt-6 border-t border-white/10">
+                <div class="flex justify-between items-center mb-2">
+                  <div class="calc-section-title mb-0">
+                    <span class="calc-step-badge">5</span>
+                    <span>Cantidad / Tiraje</span>
+                  </div>
+                  <span id="quantity-display" class="text-xl font-bold font-display text-amber-300">
+                    1,000 piezas
+                  </span>
+                </div>
+
+                <div class="slider-container">
+                  <input type="range" id="quantity-slider" class="quantity-slider" min="100" max="5000" step="50" value="1000">
+                </div>
+
+                <!-- Preset Quick Buttons -->
+                <div class="preset-quantities">
+                  <button type="button" class="preset-btn" data-qty="100">100 pzas</button>
+                  <button type="button" class="preset-btn" data-qty="250">250 pzas</button>
+                  <button type="button" class="preset-btn" data-qty="500">500 pzas</button>
+                  <button type="button" class="preset-btn active" data-qty="1000">1,000 pzas (Recomendado)</button>
+                  <button type="button" class="preset-btn" data-qty="2500">2,500 pzas</button>
+                  <button type="button" class="preset-btn" data-qty="5000">5,000 pzas (Mayor Ahorro)</button>
+                </div>
+              </div>
+
+              <!-- STEP 6: Pre-flight File Upload Simulator -->
+              <div class="pt-6 border-t border-white/10">
+                <div class="calc-section-title">
+                  <span class="calc-step-badge">6</span>
+                  <span>Adjuntar Archivo de Diseño (Opcional)</span>
+                </div>
+
+                <div id="quote-dropzone" class="upload-dropzone">
+                  <i class="fa-solid fa-cloud-arrow-up"></i>
+                  <p class="text-sm font-semibold text-white">Arrastra y suelta tu archivo aquí, o <span class="text-cyan-400 underline">haz clic para examinar</span></p>
+                  <p class="text-xs text-gray-400 mt-1">Formatos admitidos: PDF, AI, PSD, EPS o ZIP (Hasta 100 MB)</p>
+                  <input type="file" id="file-upload-input" class="hidden" accept=".pdf,.ai,.psd,.eps,.zip,.rar">
+                </div>
+
+                <div id="file-preview-area"></div>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- STICKY SUMMARY & CONVERSION PANEL (4 Cols) -->
+          <div class="lg:col-span-4">
+            <div class="quote-summary-card">
+              
+              <div class="flex items-center justify-between pb-3 border-b border-white/10">
+                <span class="text-xs font-bold uppercase tracking-wider text-gray-400">Resumen Estimado</span>
+                <span id="calc-discount-val" class="discount-badge">-40% Volumen</span>
+              </div>
+
+              <div class="my-4">
+                <span class="text-xs text-gray-400 uppercase font-semibold">Total Presupuestado (MXN):</span>
+                <div id="calc-total-price" class="price-display-large text-gold-foil">$2,640</div>
+                <div class="flex items-center justify-between text-xs text-gray-400">
+                  <span>Precio Unitario:</span>
+                  <span id="calc-unit-price" class="font-bold text-white">$2.64 c/u</span>
+                </div>
+              </div>
+
+              <!-- Breakdown -->
+              <div class="space-y-1 py-3 border-y border-white/10 text-xs">
+                <div class="breakdown-row">
+                  <span class="text-gray-400">Impresión Base:</span>
+                  <span id="calc-base-cost" class="font-semibold text-white">$1,580</span>
+                </div>
+                <div class="breakdown-row">
+                  <span class="text-gray-400">Acabados de Lujo:</span>
+                  <span id="calc-finishes-cost" class="font-semibold text-amber-300">$1,060</span>
+                </div>
+                <div class="breakdown-row">
+                  <span class="text-gray-400">Tiempo de Producción:</span>
+                  <span id="calc-turnaround" class="font-semibold text-cyan-400">4 a 5 días hábiles</span>
+                </div>
+              </div>
+
+              <!-- Action Conversion Buttons -->
+              <div class="space-y-3 pt-5">
+                <a id="btn-whatsapp-quote" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary-luxury w-full text-center">
+                  <i class="fa-brands fa-whatsapp text-lg text-emerald-900"></i>
+                  <span>Enviar Cotización a WhatsApp</span>
+                </a>
+
+                <button type="button" id="btn-email-quote" class="btn-secondary-cmyk w-full text-xs py-3">
+                  <i class="fa-solid fa-envelope"></i> Recibir Propuesta Formal por Correo
+                </button>
+              </div>
+
+              <!-- Guarantees mini pills -->
+              <div class="mt-6 pt-4 border-t border-white/10 space-y-2 text-[11px] text-gray-400">
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-emerald-400"></i>
+                  <span>Revisión de preprensa sin costo antes de imprimir</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-cyan-400"></i>
+                  <span>Garantía de reimpresión ante error de registro</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-check text-amber-300"></i>
+                  <span>Facturación fiscal digital inmediata (CFDI 4.0)</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. GALERÍA / PORTAFOLIO REAL Y PRUEBA SOCIAL
+         ========================================================================= -->
+    <section id="portafolio" class="py-20 relative bg-[#090C12] border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-bold uppercase tracking-wider mb-3">
+            <i class="fa-solid fa-images"></i> Obras Terminadas
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-extrabold font-display text-white">
+            Portafolio de Producciones Reales
+          </h2>
+          <p class="text-gray-400 mt-4 text-base sm:text-lg">
+            Explora de cerca nuestros trabajos recientes. Haz clic en cualquier pieza para inspeccionar los acabados y sustratos aplicados.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex justify-center flex-wrap gap-2 mb-12">
+          <button class="gallery-filter-btn catalog-tab-btn active" data-filter="all">Todos los Trabajos</button>
+          <button class="gallery-filter-btn catalog-tab-btn" data-filter="luxury">Acabados Luxury</button>
+          <button class="gallery-filter-btn catalog-tab-btn" data-filter="packaging">Empaques y Cajas</button>
+          <button class="gallery-filter-btn catalog-tab-btn" data-filter="editorial">Editorial de Arte</button>
+          <button class="gallery-filter-btn catalog-tab-btn" data-filter="branding">Papelería Corporativa</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+          
+          <!-- Item 1 -->
+          <div class="gallery-item group" 
+               data-category="luxury"
+               data-title="Tarjetas Signature Estudio Arquitectura"
+               data-category-name="Acabados Luxury"
+               data-desc="Tarjetas en papel algodón puro 450g con Hot Stamping pan de oro mate y cantos dorados biselados."
+               data-finishes="Hot Stamping Oro|Cantos Dorados|Algodón 450g"
+               data-substrate="Papel Algodón 450g Gmund"
+               data-leadtime="4 días hábiles"
+               data-product-key="tarjetas_luxury">
+            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=700&q=80" alt="Tarjetas Arquitectura">
+            <div class="gallery-item-overlay">
+              <span class="text-xs font-bold text-amber-300 uppercase tracking-wider mb-1">Luxury</span>
+              <h4 class="text-lg font-bold text-white font-display">Estudio Arq Signature</h4>
+              <p class="text-xs text-gray-300">Hot Stamping Oro + Cantos Dorados</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="gallery-item group" 
+               data-category="packaging"
+               data-title="Caja Rígida Gourmet Chocolates"
+               data-category-name="Empaques y Cajas"
+               data-desc="Caja de lujo con cierre magnético oculto, forro en couché mate 150g sobre cartón rígido 2.5mm con Barniz UV 3D a registro."
+               data-finishes="Barniz UV 3D|Laminado Soft Touch|Cierre Imantado"
+               data-substrate="Cartón Rígido 2.5 mm + Couché 150g"
+               data-leadtime="7 días hábiles"
+               data-product-key="cajas_empaque">
+            <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=700&q=80" alt="Caja Chocolates">
+            <div class="gallery-item-overlay">
+              <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider mb-1">Empaque</span>
+              <h4 class="text-lg font-bold text-white font-display">Caja Chocolatier Noir</h4>
+              <p class="text-xs text-gray-300">Barniz UV 3D + Tacto Terciopelo</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="gallery-item group" 
+               data-category="editorial"
+               data-title="Libro Monográfico Bienal de Diseño"
+               data-category-name="Editorial de Arte"
+               data-desc="Edición limitada de 500 ejemplares. Pasta dura forrada en tela editorial con troquel en bajo relieve y hojas en couché mate 170g."
+               data-finishes="Pasta Dura|Bajorrelieve Ciego|Encuadernación Cosida"
+               data-substrate="Couché Mate FSC 170g"
+               data-leadtime="6 días hábiles"
+               data-product-key="catalogos_revistas">
+            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=700&q=80" alt="Libro Monográfico">
+            <div class="gallery-item-overlay">
+              <span class="text-xs font-bold text-pink-400 uppercase tracking-wider mb-1">Editorial</span>
+              <h4 class="text-lg font-bold text-white font-display">Monografía Bienal</h4>
+              <p class="text-xs text-gray-300">Encuadernación Cosida PUR</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="gallery-item group" 
+               data-category="branding"
+               data-title="Kit Corporativo Notaría Pública"
+               data-category-name="Papelería Corporativa"
+               data-desc="Folders con solapa grabada en golpe seco, hojas membretadas en opalina y sobres institucionales con sellado de seguridad."
+               data-finishes="Golpe Seco (Embossing)|Plastificado Mate|Opalina 120g"
+               data-substrate="Sulfatada 14 pts + Opalina 120g"
+               data-leadtime="4 días hábiles"
+               data-product-key="carpetas_corp">
+            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=700&q=80" alt="Kit Notaría">
+            <div class="gallery-item-overlay">
+              <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-1">Corporativo</span>
+              <h4 class="text-lg font-bold text-white font-display">Kit Notaría 144</h4>
+              <p class="text-xs text-gray-300">Golpe Seco + Sulfatada 14 pts</p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="gallery-item group" 
+               data-category="packaging"
+               data-title="Etiquetas en Rollo Mezcal Artesanal"
+               data-category-name="Empaques y Cajas"
+               data-desc="Etiquetas en sustrato texturizado tipo verjurado resistente a humedad con stamping cobre metálico y barniz protector serigráfico."
+               data-finishes="Hot Stamping Cobre|Papel Texturado|Adhesivo Húmedo"
+               data-substrate="Papel Verjurado Fasson"
+               data-leadtime="5 días hábiles"
+               data-product-key="etiquetas_rollo">
+            <img src="https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&w=700&q=80" alt="Etiquetas Mezcal">
+            <div class="gallery-item-overlay">
+              <span class="text-xs font-bold text-amber-300 uppercase tracking-wider mb-1">Etiquetas</span>
+              <h4 class="text-lg font-bold text-white font-display">Mezcal Ancestral</h4>
+              <p class="text-xs text-gray-300">Stamping Cobre en Rollo</p>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="gallery-item group" 
+               data-category="luxury"
+               data-title="Invitaciones Gala Benéfica"
+               data-category-name="Acabados Luxury"
+               data-desc="Tarjetón doble empalme (600g de espesor) con troquel calado láser de alta filigrana y stamping plata holográfico."
+               data-finishes="Empalme 600g|Troquel Láser|Foil Plata"
+               data-substrate="Doble Cartulina Fedrigoni 600g"
+               data-leadtime="5 días hábiles"
+               data-product-key="tarjetas_luxury">
+            <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=700&q=80" alt="Invitaciones Gala">
+            <div class="gallery-item-overlay">
+              <span class="text-xs font-bold text-purple-400 uppercase tracking-wider mb-1">Luxury</span>
+              <h4 class="text-lg font-bold text-white font-display">Invitaciones Gala 2026</h4>
+              <p class="text-xs text-gray-300">Empalme 600g + Stamping Holográfico</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- PRUEBA SOCIAL: TESTIMONIOS REALES & LOGOS -->
+        <div class="mt-20 pt-16 border-t border-white/10">
+          <div class="text-center max-w-2xl mx-auto mb-12">
+            <div class="flex items-center justify-center gap-1 text-amber-400 text-lg mb-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-bold font-display text-white">
+              Respaldados por Quienes Exigen Perfección
+            </h3>
+            <p class="text-gray-400 text-sm mt-1">Más de 350 directores de arte y agencias confían su producción a Imprenta Gipe.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div class="glass-panel p-6 flex flex-col justify-between">
+              <p class="text-gray-300 text-sm italic mb-6 leading-relaxed">
+                "Encontrar un taller en México que domine el registro milimétrico del Barniz UV 3D sobre papel de algodón era imposible hasta que conocimos a Gipe. Su nivel de detalle en pre-prensa nos ahorró semanas de retrabajos."
+              </p>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-cyan-500/20 border border-cyan-400/40 flex items-center justify-center font-bold text-cyan-300">
+                  RC
+                </div>
+                <div>
+                  <h5 class="text-sm font-bold text-white">Rodrigo Castillejos</h5>
+                  <p class="text-xs text-gray-400">Director Creativo · Studio Vórtice</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-panel p-6 flex flex-col justify-between">
+              <p class="text-gray-300 text-sm italic mb-6 leading-relaxed">
+                "El cotizador dinámico es una maravilla para calcular presupuestos inmediatos con nuestros clientes en juntas creativas. Además, el pan de oro que aplican tiene un brillo metálico puro de exhibición internacional."
+              </p>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-amber-500/20 border border-amber-400/40 flex items-center justify-center font-bold text-amber-300">
+                  VM
+                </div>
+                <div>
+                  <h5 class="text-sm font-bold text-white">Valeria Montes de Oca</h5>
+                  <p class="text-xs text-gray-400">Gerente de Marca · L’Essence Cosméticos</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-panel p-6 flex flex-col justify-between">
+              <p class="text-gray-300 text-sm italic mb-6 leading-relaxed">
+                "Llevamos 4 años imprimiendo nuestros catálogos de arte y cajas rígidas con Gipe. Tienen un control colorimétrico ISO impecable: el magenta y cian salen exactos lote tras lote."
+              </p>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-pink-500/20 border border-pink-400/40 flex items-center justify-center font-bold text-pink-300">
+                  ES
+                </div>
+                <div>
+                  <h5 class="text-sm font-bold text-white">Eduardo Sotomayor</h5>
+                  <p class="text-xs text-gray-400">CEO & Fundador · Grupo Gastronómico Albor</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Brand Logos Strip -->
+          <div class="mt-14 pt-8 border-t border-white/5 flex flex-wrap justify-center items-center gap-8 sm:gap-14 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+            <span class="text-lg font-black tracking-widest font-brand text-gray-400 hover:text-white">AURA LUXURY</span>
+            <span class="text-lg font-black tracking-widest font-display text-gray-400 hover:text-cyan-400">NEXUS LABS</span>
+            <span class="text-lg font-bold tracking-widest text-gray-400 hover:text-amber-300">VALENTI & CO</span>
+            <span class="text-lg font-black tracking-widest font-brand text-gray-400 hover:text-pink-400">KINETIC BRAND</span>
+            <span class="text-lg font-bold tracking-widest text-gray-400 hover:text-white">GRUPO ALBOR</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         8. SECCIÓN FINAL DE CONTACTO, UBICACIÓN Y MAPA EMBEBIDO
+         ========================================================================= -->
+    <section id="contacto" class="py-20 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-bold uppercase tracking-wider mb-3">
+            <i class="fa-solid fa-location-dot"></i> Instalaciones & Showroom
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-extrabold font-display text-white">
+            Visítanos o Inicia tu Proyecto Hoy
+          </h2>
+          <p class="text-gray-400 mt-4 text-base sm:text-lg">
+            Ven a nuestro Showroom a tocar los muestrarios de papel y ver los acabados en persona, o escríbenos para atención remota prioritaria.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          
+          <!-- Contact Info & Interactive Form (7 Cols) -->
+          <div class="lg:col-span-7 space-y-8">
+            
+            <!-- Information Cards Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              
+              <div class="glass-panel p-5">
+                <div class="flex items-center gap-3 mb-2">
+                  <div class="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-sm font-bold text-white">Taller & Showroom</h4>
+                    <span class="text-xs text-gray-400">Visitas con cita</span>
+                  </div>
+                </div>
+                <p class="text-xs text-gray-300 leading-relaxed mt-2">
+                  Av. de las Artes Gráficas 1240, Col. Industrial Gráfica, CP 03100, Ciudad de México.
+                </p>
+              </div>
+
+              <div class="glass-panel p-5">
+                <div class="flex items-center gap-3 mb-2">
+                  <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-300">
+                    <i class="fa-solid fa-clock"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-sm font-bold text-white">Horarios de Atención</h4>
+                    <span class="text-xs text-emerald-400 font-semibold">Taller Activo</span>
+                  </div>
+                </div>
+                <p class="text-xs text-gray-300 leading-relaxed mt-2">
+                  Lunes a Viernes: 8:30 AM – 6:30 PM<br>
+                  Sábados: 9:00 AM – 2:00 PM
+                </p>
+              </div>
+
+              <div class="glass-panel p-5">
+                <div class="flex items-center gap-3 mb-2">
+                  <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-sm font-bold text-white">Líneas Directas</h4>
+                    <span class="text-xs text-gray-400">Respuesta rápida</span>
+                  </div>
+                </div>
+                <p class="text-xs text-gray-300 leading-relaxed mt-2">
+                  PBX: (55) 5432-8900<br>
+                  WhatsApp: +52 1 55 9876-5432
+                </p>
+              </div>
+
+              <div class="glass-panel p-5">
+                <div class="flex items-center gap-3 mb-2">
+                  <div class="w-10 h-10 rounded-lg bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-sm font-bold text-white">Correos Oficiales</h4>
+                    <span class="text-xs text-gray-400">Recepción de arte</span>
+                  </div>
+                </div>
+                <p class="text-xs text-gray-300 leading-relaxed mt-2">
+                  Ventas: cotizaciones@imprentagipe.com<br>
+                  Técnico: preprensa@imprentagipe.com
+                </p>
+              </div>
+
+            </div>
+
+            <!-- Contact Form -->
+            <form id="contact-form" class="glass-panel p-6 sm:p-8 space-y-4">
+              <h3 class="text-xl font-bold font-display text-white mb-2">Envía un Mensaje o Solicita Muestrario Físico</h3>
+              <p class="text-xs text-gray-400 mb-4">Te enviaremos un catálogo de sustratos y acabados sin costo a tu oficina.</p>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-gray-300 mb-1">Nombre Completo *</label>
+                  <input type="text" id="contact-name" required placeholder="Tu nombre" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-cyan-400">
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-gray-300 mb-1">Empresa / Agencia</label>
+                  <input type="text" placeholder="Ej. Estudio Creativo" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-cyan-400">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-gray-300 mb-1">Correo Electrónico *</label>
+                  <input type="email" required placeholder="tu@empresa.com" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-cyan-400">
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-gray-300 mb-1">Teléfono / WhatsApp *</label>
+                  <input type="tel" required placeholder="55 1234 5678" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-cyan-400">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-gray-300 mb-1">Detalles de tu Proyecto o Solicitud *</label>
+                <textarea rows="3" required placeholder="Describe tu producto, cantidad estimada y tipo de acabados requeridos..." class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-cyan-400"></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary-luxury w-full text-center py-3 text-sm">
+                <i class="fa-solid fa-paper-plane mr-2"></i> Enviar Consulta / Solicitar Visita
+              </button>
+            </form>
+
+          </div>
+
+          <!-- Embedded Interactive Google Maps (5 Cols) -->
+          <div class="lg:col-span-5 space-y-4">
+            <div class="map-container">
+              <!-- Google Maps Iframe (Dark styled embed) -->
+              <iframe 
+                title="Ubicación Imprenta Gipe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.775836267866!2d-99.1415!3d19.4235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI1JzI0LjYiTiA5OcKwMDgnMjkuNCJX!5e0!3m2!1ses-419!2smx!4v1680000000000!5m2!1ses-419!2smx" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+            <!-- Logistics and parking note -->
+            <div class="p-4 rounded-xl bg-white/5 border border-white/10 flex items-start gap-3">
+              <i class="fa-solid fa-truck-ramp-box text-cyan-400 text-lg mt-0.5"></i>
+              <div class="text-xs text-gray-300 leading-relaxed">
+                <strong class="text-white block font-semibold">Facilidades de Carga y Estacionamiento:</strong>
+                Contamos con bahía de carga para camionetas de 3.5 toneladas y estacionamiento exclusivo para clientes con rampa para recolección de pedidos de gran volumen.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         9. FOOTER CORPORATIVO CON GARANTÍAS Y MARCA
+         ========================================================================= -->
+    <footer class="bg-[#050608] border-t border-white/10 pt-16 pb-12 text-sm text-gray-400">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+          
+          <!-- Brand Col (2 cols span on lg) -->
+          <div class="lg:col-span-2 space-y-4">
+            <a href="#" class="inline-block">
+              <span class="text-2xl font-black tracking-tight font-brand text-white">
+                IMPRENTA <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-400">GIPE</span>
+              </span>
+              <!-- CMYK Dots in footer -->
+              <div class="flex items-center gap-1.5 mt-1">
+                <div class="w-3.5 h-1.5 rounded-sm bg-[#00E5FF]"></div>
+                <div class="w-3.5 h-1.5 rounded-sm bg-[#FF007F]"></div>
+                <div class="w-3.5 h-1.5 rounded-sm bg-[#FFD700]"></div>
+                <div class="w-3.5 h-1.5 rounded-sm bg-[#111116] border border-white/40"></div>
+                <span class="text-[9px] uppercase tracking-widest text-gray-400 font-bold ml-1">CMYK CERTIFIED</span>
+              </div>
+            </a>
+            <p class="text-xs text-gray-400 leading-relaxed max-w-sm">
+              Imprenta Gipe es el referente en México para acabados gráficos de lujo, packaging personalizado y producción offset/digital de alta fidelidad de color.
+            </p>
+            <div class="pt-2 flex items-center gap-3 text-gray-300">
+              <a href="#" class="w-8 h-8 rounded-lg bg-white/5 hover:bg-cyan-500/20 hover:text-cyan-400 flex items-center justify-center transition-colors"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="w-8 h-8 rounded-lg bg-white/5 hover:bg-cyan-500/20 hover:text-cyan-400 flex items-center justify-center transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="w-8 h-8 rounded-lg bg-white/5 hover:bg-cyan-500/20 hover:text-cyan-400 flex items-center justify-center transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="w-8 h-8 rounded-lg bg-white/5 hover:bg-cyan-500/20 hover:text-cyan-400 flex items-center justify-center transition-colors"><i class="fa-brands fa-behance"></i></a>
+            </div>
+          </div>
+
+          <!-- Col 2: Servicios -->
+          <div class="space-y-3">
+            <h5 class="text-white font-bold text-xs uppercase tracking-wider">Líneas de Producción</h5>
+            <ul class="space-y-2 text-xs">
+              <li><a href="#servicios" class="hover:text-cyan-400 transition-colors">Tarjetas de Presentación Luxury</a></li>
+              <li><a href="#servicios" class="hover:text-cyan-400 transition-colors">Carpetas y Folders Corporativos</a></li>
+              <li><a href="#servicios" class="hover:text-cyan-400 transition-colors">Cajas y Empaques Rígidos</a></li>
+              <li><a href="#servicios" class="hover:text-cyan-400 transition-colors">Etiquetas en Rollo BOPP</a></li>
+              <li><a href="#servicios" class="hover:text-cyan-400 transition-colors">Libros y Catálogos PUR</a></li>
+              <li><a href="#servicios" class="hover:text-cyan-400 transition-colors">Lonas y Viniles Gran Formato</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Acabados -->
+          <div class="space-y-3">
+            <h5 class="text-white font-bold text-xs uppercase tracking-wider">Acabados Especiales</h5>
+            <ul class="space-y-2 text-xs">
+              <li><a href="#acabados" class="hover:text-amber-300 transition-colors">Barniz UV 3D Alto Relieve</a></li>
+              <li><a href="#acabados" class="hover:text-amber-300 transition-colors">Hot Stamping Pan de Oro</a></li>
+              <li><a href="#acabados" class="hover:text-amber-300 transition-colors">Laminado Soft Touch (Tacto Seda)</a></li>
+              <li><a href="#acabados" class="hover:text-amber-300 transition-colors">Troquelado y Suajado de Precisión</a></li>
+              <li><a href="#acabados" class="hover:text-amber-300 transition-colors">Gofrado / Embossing Ciego</a></li>
+              <li><a href="#acabados" class="hover:text-amber-300 transition-colors">Cantos Pintados y Dorados</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Recursos & Legal -->
+          <div class="space-y-3">
+            <h5 class="text-white font-bold text-xs uppercase tracking-wider">Recursos & Garantías</h5>
+            <ul class="space-y-2 text-xs">
+              <li><a href="#guia-tecnica" class="hover:text-pink-400 transition-colors">Guía Técnica de Preprensa</a></li>
+              <li><a href="#guia-tecnica" class="hover:text-pink-400 transition-colors">Descarga de Plantillas AI/PDF</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Garantía de Fidelidad de Color</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Políticas de Envíos Nacionales</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Aviso de Privacidad</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Términos y Condiciones</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Bottom Copyright & Quality Seal -->
+        <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+          <p>© 2026 Imprenta Gipe. Todos los derechos reservados. Desarrollado con tecnología de alta conversión.</p>
+          <div class="flex items-center gap-4 text-gray-400">
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-emerald-400"></i> Calidad Garantizada</span>
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-truck-fast text-cyan-400"></i> Envíos con Seguro</span>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- =========================================================================
+         10. FLOATING WHATSAPP BUTTON (CON TOOLTIP Y CONVERSIÓN RÁPIDA)
+         ========================================================================= -->
+    <a href="https://wa.me/5215598765432?text=%C2%A1Hola%20Imprenta%20Gipe!%20%F0%9F%91%8B%20Deseo%20solicitar%20asesor%C3%ADa%20t%C3%A9cnica%20y%20cotizaci%C3%B3n%20para%20un%20proyecto%20de%20impresi%C3%B3n%20con%20acabados%20premium." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="whatsapp-float-btn" 
+       aria-label="Contactar por WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="wa-tooltip">
+        ¿Dudas con tu archivo? Chatea con un asesor en 2 min
+      </span>
+    </a>
+
+    <!-- =========================================================================
+         11. MODALES: DETALLE DE PROYECTO & CORREO
+         ========================================================================= -->
+    
+    <!-- Modal: Detalle de Proyecto en Portafolio -->
+    <div id="project-detail-modal" class="custom-modal">
+      <div class="modal-content-box">
+        <div class="flex justify-between items-start mb-4">
+          <div>
+            <span id="modal-project-category" class="text-xs font-bold text-cyan-400 uppercase tracking-wider block">Categoría</span>
+            <h3 id="modal-project-title" class="text-2xl font-bold font-display text-white">Título de Proyecto</h3>
+          </div>
+          <button type="button" id="modal-close-btn" class="text-gray-400 hover:text-white p-2 text-xl" aria-label="Cerrar modal">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <div class="h-64 rounded-xl overflow-hidden mb-4 bg-black">
+          <img id="modal-project-img" src="" alt="Muestra de proyecto" class="w-full h-full object-cover">
+        </div>
+
+        <p id="modal-project-desc" class="text-sm text-gray-300 leading-relaxed mb-4">Descripción del proyecto...</p>
+
+        <div>
+          <span class="text-xs font-bold text-gray-400 uppercase tracking-wider block mb-2">Acabados de Lujo Aplicados:</span>
+          <div id="modal-project-finishes" class="flex flex-wrap gap-2"></div>
+        </div>
+
+        <div id="modal-project-specs"></div>
+
+        <div class="mt-6 pt-4 border-t border-white/10 flex justify-end gap-3">
+          <button type="button" id="modal-quote-cta" class="btn-primary-luxury text-xs py-2.5">
+            <i class="fa-solid fa-calculator"></i> Cotizar Acabado Idéntico en Calculadora
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal: Enviar Cotización por Correo -->
+    <div id="email-quote-modal" class="custom-modal">
+      <div class="modal-content-box max-w-md">
+        <div class="flex justify-between items-center mb-4">
+          <h3 class="text-lg font-bold font-display text-white">Recibir Cotización por Correo</h3>
+          <button type="button" id="close-email-modal" class="text-gray-400 hover:text-white text-lg">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <p class="text-xs text-gray-400 mb-4">Te enviaremos la ficha técnica desglosada con número de folio y vigencia de 15 días.</p>
+        
+        <form id="email-quote-form" class="space-y-4">
+          <div>
+            <label class="block text-xs text-gray-300 font-semibold mb-1">Nombre o Empresa</label>
+            <input type="text" required placeholder="Ej. Ana Morales" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-cyan-400">
+          </div>
+          <div>
+            <label class="block text-xs text-gray-300 font-semibold mb-1">Correo Electrónico</label>
+            <input type="email" id="email-recipient-input" required placeholder="tu@empresa.com" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-cyan-400">
+          </div>
+          <button type="submit" class="btn-primary-luxury w-full text-center py-2.5 text-xs">
+            <i class="fa-solid fa-paper-plane mr-1.5"></i> Enviar Ficha Técnica a mi Correo
+          </button>
+        </form>
+      </div>
+    </div>
+
+  </div> <!-- End site-wrapper -->
+
+  <!-- Scripts -->
+  <script src="js/cmyk-canvas.js"></script>
+  <script src="js/quote-calculator.js"></script>
+  <script src="js/gallery-modal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
